@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>fGraphDesign</class>
+ <widget class="QMainWindow" name="fGraphDesign">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>KPaths</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>images/molecule.png</normaloff>images/molecule.png</iconset>
+  </property>
+  <property name="locale">
+   <locale language="English" country="UnitedStates"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGraphicsViewEc" name="graphicsView">
+      <property name="renderHints">
+       <set>QPainter::Antialiasing|QPainter::SmoothPixmapTransform|QPainter::TextAntialiasing</set>
+      </property>
+      <property name="dragMode">
+       <enum>QGraphicsView::ScrollHandDrag</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string/>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionCarica"/>
+   <addaction name="actionSalva"/>
+   <addaction name="separator"/>
+   <addaction name="actionDot"/>
+   <addaction name="actionGrafoCasuale"/>
+   <addaction name="separator"/>
+   <addaction name="actionCentra"/>
+   <addaction name="actionCancella"/>
+   <addaction name="separator"/>
+   <addaction name="actionK_percorsi"/>
+   <addaction name="separator"/>
+   <addaction name="actionAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionNodo">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/add.png</normaloff>images/add.png</iconset>
+   </property>
+   <property name="text">
+    <string>Vertex</string>
+   </property>
+   <property name="toolTip">
+    <string>Create a new vertex</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionArco">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/arrow_right.png</normaloff>images/arrow_right.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edge</string>
+   </property>
+   <property name="toolTip">
+    <string>Create a new edge</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionGrafoCasuale">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/dice.png</normaloff>images/dice.png</iconset>
+   </property>
+   <property name="text">
+    <string>Random</string>
+   </property>
+   <property name="toolTip">
+    <string>Create a random graph</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionK_percorsi">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/chart_stock.png</normaloff>images/chart_stock.png</iconset>
+   </property>
+   <property name="text">
+    <string>K paths</string>
+   </property>
+   <property name="toolTip">
+    <string>Find k paths</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+K</string>
+   </property>
+  </action>
+  <action name="actionCancella">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/broom.png</normaloff>images/broom.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clean</string>
+   </property>
+   <property name="toolTip">
+    <string>Clean the form</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionDot">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/page_white_code_red.png</normaloff>images/page_white_code_red.png</iconset>
+   </property>
+   <property name="text">
+    <string>Dot</string>
+   </property>
+   <property name="toolTip">
+    <string>Open dot language editor</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionCentra">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/zoom_fit.png</normaloff>images/zoom_fit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Center</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionSalva">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/disk.png</normaloff>images/disk.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionCarica">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/folder_page.png</normaloff>images/folder_page.png</iconset>
+   </property>
+   <property name="text">
+    <string>Load</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/info_rhombus.png</normaloff>images/info_rhombus.png</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QGraphicsViewEc</class>
+   <extends>QGraphicsView</extends>
+   <header>QGraphicsViewEc.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionArco</sender>
+   <signal>triggered()</signal>
+   <receiver>fGraphDesign</receiver>
+   <slot>bArcoClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>198</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionNodo</sender>
+   <signal>triggered()</signal>
+   <receiver>fGraphDesign</receiver>
+   <slot>bNodoClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>198</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionGrafoCasuale</sender>
+   <signal>triggered()</signal>
+   <receiver>fGraphDesign</receiver>
+   <slot>bCasualeClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>198</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionK_percorsi</sender>
+   <signal>triggered()</signal>
+   <receiver>fGraphDesign</receiver>
+   <slot>bKPercorsi()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>198</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionCancella</sender>
+   <signal>triggered()</signal>
+   <receiver>fGraphDesign</receiver>
+   <slot>bPulisci()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>198</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionDot</sender>
+   <signal>triggered()</signal>
+   <receiver>fGraphDesign</receiver>
+   <slot>bDot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>198</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionCentra</sender>
+   <signal>triggered()</signal>
+   <receiver>fGraphDesign</receiver>
+   <slot>bCentra()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>198</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSalva</sender>
+   <signal>triggered()</signal>
+   <receiver>fGraphDesign</receiver>
+   <slot>bSalva()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>198</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionCarica</sender>
+   <signal>triggered()</signal>
+   <receiver>fGraphDesign</receiver>
+   <slot>bCarica()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>198</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionAbout</sender>
+   <signal>triggered()</signal>
+   <receiver>fGraphDesign</receiver>
+   <slot>bAbout()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>198</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>bNodoClicked()</slot>
+  <slot>bArcoClicked()</slot>
+  <slot>bCasualeClicked()</slot>
+  <slot>bKPercorsi()</slot>
+  <slot>bPulisci()</slot>
+  <slot>bBenchmark()</slot>
+  <slot>bDot()</slot>
+  <slot>bCentra()</slot>
+  <slot>bSalva()</slot>
+  <slot>bCarica()</slot>
+  <slot>bAbout()</slot>
+ </slots>
+</ui>

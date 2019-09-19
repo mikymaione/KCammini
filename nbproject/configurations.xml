@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="Strutture" projectFiles="true">
+        <itemPath>LASD/Headers/Grafo.h</itemPath>
+        <itemPath>LASD/Headers/Heap.h</itemPath>
+        <itemPath>LASD/Headers/Lista.h</itemPath>
+        <itemPath>LASD/Headers/ListaDP.h</itemPath>
+        <itemPath>LASD/Headers/PriorityQueue.h</itemPath>
+        <itemPath>LASD/Headers/Queue.h</itemPath>
+        <itemPath>LASD/Headers/Set.h</itemPath>
+        <itemPath>LASD/Headers/Stack.h</itemPath>
+        <itemPath>LASD/Headers/Vector.h</itemPath>
+      </logicalFolder>
+      <itemPath>QGraphicsViewEc.h</itemPath>
+      <itemPath>fAbout.h</itemPath>
+      <itemPath>fArco.h</itemPath>
+      <itemPath>fDatiGrafoCasuale.h</itemPath>
+      <itemPath>fDettaglioNodo.h</itemPath>
+      <itemPath>fDotLanguage.h</itemPath>
+      <itemPath>fGraphDesign.h</itemPath>
+      <itemPath>fKPercorsi.h</itemPath>
+      <itemPath>fPercorso.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+      <itemPath>fAbout.ui</itemPath>
+      <itemPath>fArco.ui</itemPath>
+      <itemPath>fDatiGrafoCasuale.ui</itemPath>
+      <itemPath>fDettaglioNodo.ui</itemPath>
+      <itemPath>fDotLanguage.ui</itemPath>
+      <itemPath>fGraphDesign.ui</itemPath>
+      <itemPath>fKPercorsi.ui</itemPath>
+      <itemPath>fPercorso.ui</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="LASD" projectFiles="true">
+        <logicalFolder name="f1" displayName="GB" projectFiles="true">
+          <itemPath>LASD/GB/GB.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="Strutture" projectFiles="true">
+          <itemPath>LASD/Strutture/Grafo.c</itemPath>
+          <itemPath>LASD/Strutture/Heap.c</itemPath>
+          <itemPath>LASD/Strutture/Lista.c</itemPath>
+          <itemPath>LASD/Strutture/ListaDP.c</itemPath>
+          <itemPath>LASD/Strutture/PriorityQueue.c</itemPath>
+          <itemPath>LASD/Strutture/Queue.c</itemPath>
+          <itemPath>LASD/Strutture/Set.c</itemPath>
+          <itemPath>LASD/Strutture/Stack.c</itemPath>
+          <itemPath>LASD/Strutture/Vector.c</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <itemPath>QGraphicsViewEc.cpp</itemPath>
+      <itemPath>fAbout.cpp</itemPath>
+      <itemPath>fArco.cpp</itemPath>
+      <itemPath>fDatiGrafoCasuale.cpp</itemPath>
+      <itemPath>fDettaglioNodo.cpp</itemPath>
+      <itemPath>fDotLanguage.cpp</itemPath>
+      <itemPath>fGraphDesign.cpp</itemPath>
+      <itemPath>fKPercorsi.cpp</itemPath>
+      <itemPath>fPercorso.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="4">
+      <toolsSet>
+        <compilerSet>MinGW|MinGW</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <qt>
+        <modules>core gui widgets</modules>
+      </qt>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>../QGVCore/QGVCore</pElem>
+            <pElem>../QGVCore/QGVCore/private</pElem>
+          </incDir>
+          <useLinkerLibraries>false</useLinkerLibraries>
+        </ccTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerOptionItem>-L"../QGVCore/lib"</linkerOptionItem>
+            <linkerLibLibItem>QGVCore</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="LASD/GB/GB.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LASD/Headers/Grafo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LASD/Headers/Heap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LASD/Headers/Lista.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LASD/Headers/ListaDP.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LASD/Headers/PriorityQueue.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LASD/Headers/Queue.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LASD/Headers/Set.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LASD/Headers/Stack.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LASD/Headers/Vector.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LASD/Strutture/Grafo.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LASD/Strutture/Heap.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LASD/Strutture/Lista.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LASD/Strutture/ListaDP.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LASD/Strutture/PriorityQueue.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LASD/Strutture/Queue.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LASD/Strutture/Set.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LASD/Strutture/Stack.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LASD/Strutture/Vector.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="QGraphicsViewEc.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="QGraphicsViewEc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fAbout.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="fAbout.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fAbout.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fArco.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="fArco.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fArco.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fDatiGrafoCasuale.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="fDatiGrafoCasuale.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fDatiGrafoCasuale.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fDettaglioNodo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="fDettaglioNodo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fDettaglioNodo.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fDotLanguage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="fDotLanguage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fDotLanguage.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fGraphDesign.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="fGraphDesign.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fGraphDesign.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fKPercorsi.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="fKPercorsi.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fKPercorsi.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fPercorso.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="fPercorso.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fPercorso.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="4">
+      <toolsSet>
+        <compilerSet>MinGW|MinGW</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <qt>
+        <target>KPaths</target>
+        <version>20.16.0421</version>
+        <buildMode>1</buildMode>
+        <modules>core gui widgets</modules>
+      </qt>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <incDir>
+            <pElem>../QGVCore/QGVCore</pElem>
+            <pElem>../QGVCore/QGVCore/private</pElem>
+          </incDir>
+          <useLinkerLibraries>false</useLinkerLibraries>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerOptionItem>-L"../QGVCore/lib"</linkerOptionItem>
+            <linkerLibLibItem>QGVCore</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="LASD/GB/GB.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LASD/Headers/Grafo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LASD/Headers/Heap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LASD/Headers/Lista.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LASD/Headers/ListaDP.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LASD/Headers/PriorityQueue.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LASD/Headers/Queue.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LASD/Headers/Set.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LASD/Headers/Stack.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LASD/Headers/Vector.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LASD/Strutture/Grafo.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LASD/Strutture/Heap.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LASD/Strutture/Lista.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LASD/Strutture/ListaDP.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LASD/Strutture/PriorityQueue.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LASD/Strutture/Queue.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LASD/Strutture/Set.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LASD/Strutture/Stack.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LASD/Strutture/Vector.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="QGraphicsViewEc.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="QGraphicsViewEc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fAbout.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="fAbout.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fAbout.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fArco.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="fArco.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fArco.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fDatiGrafoCasuale.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="fDatiGrafoCasuale.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fDatiGrafoCasuale.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fDettaglioNodo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="fDettaglioNodo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fDettaglioNodo.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fDotLanguage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="fDotLanguage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fDotLanguage.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fGraphDesign.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="fGraphDesign.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fGraphDesign.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fKPercorsi.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="fKPercorsi.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fKPercorsi.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fPercorso.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="fPercorso.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fPercorso.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
